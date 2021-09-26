@@ -6,15 +6,7 @@ import "./Details.css";
 function Details(props) {
 	//   return <div>{props.val}</div>;
 	console.log(props);
-	if (props.okay === false) {
-		return (
-			<div className="details">
-				<p className="details-loc">City Not Found</p>
-				<img src={AQIData.err.image} alt="" />
-				<Advice okay={props.okay} />
-			</div>
-		);
-	}
+
 	let AQIIndex = props.Pval.main.aqi - 1;
 	return (
 		<>
